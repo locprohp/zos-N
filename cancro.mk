@@ -225,10 +225,7 @@ PRODUCT_PACKAGES += librecovery_updater_cancro
 # Gello
 PRODUCT_PACKAGES += \
     Gello
-	
-# Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+
 
 # Permissions
 PRODUCT_COPY_FILES += \
