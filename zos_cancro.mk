@@ -19,16 +19,16 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+# Inherit some common ZOS stuff.
+$(call inherit-product, vendor/zos/common.mk)
 
 # Inherit from cancro device
 $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/xenonhd/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/zos/config/nfc_enhanced.mk)
 
-PRODUCT_NAME := xenonhd_cancro
+PRODUCT_NAME := zos_cancro
 PRODUCT_DEVICE := cancro
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
